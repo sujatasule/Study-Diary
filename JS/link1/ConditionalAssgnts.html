@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>If Statement1</title>
+</head>
+
+<body>
+  <h2>If Statement with 4 if else by using Form</h2>
+  <p id="answer"></p>
+
+  <form name="ask">
+    Age <input type="number" name="age">
+  </form><br>
+  <button type="button" onclick="myFunction">Calculate</button>
+
+  <script>
+    function myFunction() {
+      var age = Number(document.form["ask"]["age"].value)
+      var text = Number(document.form["ask"]["text"].value)
+    }
+    var age = 20;
+    var text = "";
+    if (age < 18) {
+      text = "too young";
+    } else if (age < 27) {
+      text = "Right age for military service";
+    } else if (age < 41) {
+      text = "U R in reserve";
+    } else if (age <= 55) {
+      text = "U R in backup reserve";
+    }
+    document.getElementById('answer').innerHTML = text;
+  </script>
+
+
+  <h1>Type Three Numbers</h1>
+  <p>Calculate and printout numbers</p>
+  <form name="ask">
+    user number1<input type="number" name="number1"><br>
+    user number2<input type="number" name="number2"><br>
+    user number3<input type="number" name="number3"><br>
+  </form>
+  <button type="button" onclick="myfunction()">Submit</button>
+
+  <p id="id1"></p>
+  <script>
+    function myfunction() {
+      var number1 = Number(document.forms["ask"]["number1"].value);
+      var number2 = Number(document.forms["ask"]["number2"].value);
+      var number3 = Number(document.forms["ask"]["number3"].value);
+      var result;
+      if (number1 >= 0 && number2 >= 0 && number3 >= 0) {
+        var x = number1 + number2 + number3;
+        var y = number1 * number2 * number3;
+        result = "Sum " + x + "and multiple " + y;
+      } else if (number1 >= 0 || number2 >= 0 || number3 >= 0) {
+        var x = number1 + number2 + number3;
+
+        result = "sum" + x;
+      } else {
+        result = "only negative"
+      }
+      document.getElementById("id1").innerHTML = result;
+    }
+  </script>
+
+  <h2>Positive or negative number and also divisible by 2 or not</h2>
+  <form name="ask">
+    Insert Number <input type="number" name="number">
+  </form>
+  <button type="button" onclick="myFunction()">Submit</button>
+  <p id="answer1"></p>
+  <script>
+    function myFunction() {
+      var number = Number(document.forms["ask"]["number"].value);
+      if (number > 0 && number % 2 == 0) {
+        text = "Positive number and Divisible by 2";
+      } else if (number > 0 && number % 2 != 0) {
+        text = "Positive number and Not divisible by 2";
+      } else if (number < 0 && number % 2 == 0) {
+        text = "Negative number and Divisible by 2";
+      } else {
+        text = "Negative and not divisible by 2";
+      }
+      document.getElementById("answer1").innerHTML = text;
+    }
+  </script>
+
+  <h1>Type the hourly salary and working hrs</h1>
+  <p> calculate salary</p>
+  <form name="ask">
+    User hr salary<input type="number" name="hrSalary"><br>
+    User working hrs<input type="number" name="workingHrs"><br>
+  </form>
+  <button type="button" onclick="calculateSalary()">Submit</button>
+  <p id="id2"></p>
+  <script>
+    function calculateSalary() {
+      var hrSalary = Number(document.forms["ask"]["hrSalary"].value);
+      var workingHrs = Number(document.forms["ask"]["workingHrs"].value);
+      var result;
+      if (workingHrs <= 7) {
+        var salary = hrSalary * workingHrs;
+        result = " salary " + salary;
+      } else if (workingHrs > 7 && workingHrs <= 9) {
+        var overTimeHrs = workingHrs - 7;
+        var salary = hrSalary * workingHrs + (overTimeHrs * 0.5 * hrSalary);
+        result = "salary " + salary;
+      } else if (workingHrs > 9) {
+        var overTimeHrs50 = 2;
+        var overTimeHrs100 = workingHrs - 9;
+        var salary = hrSalary * workingHrs + (overTimeHrs50 * 0.5 * hrSalary) + (overTimeHrs100 * 1 * hrSalary);
+        result = "salary " + salary;
+      }
+      document.getElementById("id2").innerHTML = result;
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,266 @@
+body {
+  background-color: grey;
+}
+
+/*-------header area---*/
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 10px 5px 5px orange;
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+}
+
+h1 {
+  font-size: 70px;
+  font-family: cursive;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  text-shadow: 4px 4px 10px orange;
+}
+
+h1 {
+  position: relative;
+}
+
+.un:after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  height: 3px;
+  width: 0;
+  background: transparent;
+}
+
+.un:after {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 6px;
+  background: #FDB02C;
+  transition: transform .5s ease;
+  transform: scaleX(0);
+}
+
+.un:hover:after {
+  transform: scaleX(1);
+}
+
+/*-------Nav Area---*/
+nav {
+  flex: 3;
+  text-align: center;
+  margin-top: 50px;
+}
+
+nav ul {
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  text-align: center;
+  padding: 20px;
+  font-family: cursive;
+  text-shadow: 4px 4px 10px orange;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 20px 10px;
+  width: 130px;
+  display: inline;
+}
+
+nav ul li:hover {
+  background-color: black;
+  border-bottom: 4px solid orange;
+  text-decoration: none;
+}
+
+/*-----Footer Area---*/
+.footer {
+  height: 100px;
+  width: 100%;
+  background-color: black;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+}
+
+ul li {
+  display: block;
+}
+
+a {
+  color: white;
+}
+
+/*-----aboutme main---*/
+.maindiv {
+  height: auto;
+  width: auto;
+}
+
+h2 {
+  text-align: center;
+  font-family: cursive;
+}
+
+.about {
+  background-color: rgb(232, 109, 30);
+  width: auto;
+  height: 200px;
+  box-shadow: 3px 3px 5px 6px #ccc;
+}
+
+.skills {
+  background-color: orange;
+  width: auto;
+  height: 200px;
+  box-shadow: 3px 3px 5px 6px #ccc;
+}
+
+.edu {
+  background-color: rgb(232, 109, 30);
+  width: auto;
+  height: 200px;
+  box-shadow: 3px 3px 5px 6px #ccc;
+}
+
+.exp {
+  background-color: orange;
+  width: auto;
+  height: 200px;
+  box-shadow: 3px 3px 5px 6px #ccc;
+}
+
+.hobby {
+  background-color: rgb(232, 109, 30);
+  width: auto;
+  height: 200px;
+  box-shadow: 3px 3px 5px 6px #ccc;
+}
+
+/*----about me---*/
+#sujata {
+  height: 120px;
+  width: 200px;
+  margin-left: 20px;
+  margin-right: 25px;
+  float: left;
+  border-radius: 50%;
+}
+
+table, th, td {
+  border: 1px solid black;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: orange;
+}
+
+table {
+  box-shadow: 2px 2px 4px 4px #8CCCC8;
+}
+
+/*---skills--*/
+.myskills {
+  font-family: cursive;
+  font-weight: bold;
+  padding: 120x;
+}
+
+li {
+  padding: 5px;
+}
+
+/*----JS PRACTICES----*/
+h3 {
+  color: white;
+}
+
+#panel {
+  width: 200px;
+  list-style: none;
+  padding-top: 30px;
+  display: inline-block;
+}
+
+#panel li {
+  border-radius: 3px 3px 3px 3px;
+  margin-top: 5px;
+  width: 150px;
+  background: #000000;
+  background: linear-gradient(top, #161616 0%, #000000 100%);
+  border-left: 1px solid #111;
+  border-top: 1px solid #111;
+  border-right: 1px solid #333;
+  border-bottom: 1px solid #333;
+  box-shadow: 2px 2px 4px 4px orange;
+}
+
+#panel li a {
+  color: #fff;
+  display: block;
+  padding: 10px;
+}
+
+#panel li a:hover {
+  color: orange;
+}
+
+#panel li.animation {
+  transition: all 0.4s ease-in-out;
+  transform: translateX(0px);
+}
+
+#panel li.animation:hover {
+  transform: translateX(25px);
+}
+
+.iframe {
+  float: right;
+}
+
+iframe {
+  height: 350px;
+  width: 1000px;
+  padding: 10px;
+  margin-top: 50px;
+}
+
+/*-----CONTACThtml-----*/
+.contact {
+  height: 300px;
+  width: 500px;
+  background-color: orange;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  text-align: center;
+  box-shadow: 2px 2px 4px 4px #8CCCC8;
+}
+
+.contactlist {
+  display: inline-block;
+  margin-top: 70px;
+  padding-left: 0px;
+  outline-style: dotted;
+  outline-color: black;
+  outline-width: thick;
+  box-shadow: 2px 2px 4px 4px #8CCCC8;
+}
+
+.contact:hover {
+  border-radius: 50%;
+  background-color: rgb(232, 109, 30);
+}
+
+/*----timeline---*/

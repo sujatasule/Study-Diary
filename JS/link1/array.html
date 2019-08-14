@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Arrays</title>
+
+</head>
+
+<body>
+
+  <p id="demo"></p>
+  <p id="demo1"></p>
+  <p id="demo2"></p>
+  <p id="demo3"></p>
+  <p id="demo4"></p>
+  <p id="demo5"></p>
+  <p id="demo6"></p>
+  <p id="demo7"></p>
+  <p id="demo8"></p>
+  <p id="demo9"></p>
+  <p id="demo10"></p>
+  <button type="button" onclick="sortString()">Sort</button>
+  <p id="demo11"></p>
+  <p id="demo12"></p>
+  <p id="demo13"></p>
+  <p id="demo14"></p>
+
+
+</body>
+<script>
+  //---1log array---//
+  var txt = "";
+  var item = ["cat", "cow", "monkey"];
+  item.forEach(myFunction);
+  document.getElementById("demo").innerHTML = txt;
+
+  function myFunction(value, index, array) {
+    txt = txt + value + "<br>";
+  }
+  array = ["cat", "cow", "monkey"];
+  for (index = 0; index < array.length; index++) {
+    console.log(array[index]);
+  }
+</script>
+<script>
+  //---2clone Element in array---//
+  var fruits = ["banana", "orange", "kiwi", "mango"];
+  var clone = fruits.slice(1);
+  document.getElementById("demo1").innerHTML = fruits + "<br> <br>" + clone;
+
+  //---3.First Element in array---//
+  var fruits = ["banana", "orange", "kiwi", "mango"];
+  var first = fruits[0];
+  console.log(first);
+  document.getElementById("demo2").innerHTML = first;
+
+
+
+  //---4 Last element in array---//
+  var fruits = ["banana", "orange", "kiwi", "mango"];
+  var last = fruits[fruits.length - 1];
+  console.log(last);
+  document.getElementById("demo3").innerHTML = last;
+
+  //---07 toStringWithSeparator ---//
+
+  var elements = ['Fire', 'Air', 'Water'];
+  document.getElementById("demo6").innerHTML = elements.join("-");
+  console.log(elements.join());
+  console.log(elements.join(''));
+  console.log(elements.join('-'));
+
+
+  //08 sumSquaresOfVector //
+
+  function sum_sq(array) {
+    var sum = 0,
+      i = array.length;
+    while (i--)
+      sum += Math.pow(array[i], 2);
+    return sum;
+  }
+  console.log(sum_sq([0, 1, 2, 3, 4]));
+</script>
+
+
+
+
+<script>
+  //---12 sort string element in array---//
+  var cars = ["BMW", "Volvo", "Toyota", "Auris"];
+  document.getElementById("demo11").innerHTML = cars;
+
+  function sortString() {
+    cars.sort();
+    document.getElementById("demo11").innerHTML = cars;
+  }
+</script>
+
+</html>

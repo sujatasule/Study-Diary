@@ -1,0 +1,189 @@
+body {
+  background-color: grey;
+}
+
+/*-------header area---*/
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 10px 5px 5px orange;
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+}
+
+h1 {
+  font-size: 70px;
+  font-family: cursive;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  text-shadow: 4px 4px 10px orange;
+}
+
+h1 {
+  position: relative;
+}
+
+.un:after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  height: 3px;
+  width: 0;
+  background: transparent;
+}
+
+.un:after {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 6px;
+  background: #FDB02C;
+  transition: transform .5s ease;
+  transform: scaleX(0);
+}
+
+.un:hover:after {
+  transform: scaleX(1);
+}
+
+/*-------Nav Area---*/
+nav {
+  flex: 3;
+  text-align: center;
+  margin-top: 50px;
+}
+
+nav ul {
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  text-align: center;
+  padding: 20px;
+  font-family: cursive;
+  text-shadow: 4px 4px 10px orange;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 20px 10px;
+  width: 130px;
+  display: inline;
+}
+
+nav ul li:hover {
+  background-color: black;
+  border-bottom: 4px solid orange;
+  text-decoration: none;
+}
+
+/*-----Footer Area---*/
+.footer {
+  height: 100px;
+  width: 100%;
+  background-color: black;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+}
+
+ul li {
+  display: block;
+}
+
+a {
+  color: white;
+}
+
+#maindiv h2 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+#maindiv ul, li {
+  list-style: none;
+}
+
+#maindiv ul {
+  overflow: hidden;
+  padding: 3em;
+}
+
+#maindiv ul li a {
+  text-decoration: none;
+  color: #000;
+  background: orange;
+  display: block;
+  height: 10em;
+  width: 10em;
+  padding: 1em;
+  box-shadow: 5px 5px 7px rgba(33, 33, 33, .7);
+  -webkit-transition: -webkit-transform .15s linear;
+}
+
+#maindiv ul li {
+  margin: 1em;
+  float: left;
+}
+
+#maindiv ul li h2 {
+  font-size: 140%;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+#maindiv ul li p {
+  font-family: "Reenie Beanie", arial, sans-serif;
+  font-size: 75%;
+}
+
+#maindiv ul li a {
+  transform: rotate(-6deg);
+}
+
+#maindiv ul li:nth-child(even) a {
+  -o-transform: rotate(4deg);
+  position: relative;
+  top: 5px;
+  background: rgb(232, 109, 30);
+}
+
+#maindiv ul li:nth-child(3n) a {
+  -o-transform: rotate(-3deg);
+  position: relative;
+  top: -5px;
+  background: #ccf;
+}
+
+#maindiv ul li:nth-child(5n) a {
+  -o-transform: rotate(5deg);
+  position: relative;
+  top: -10px;
+}
+
+#maindiv ul li a:hover, ul li a:focus {
+  box-shadow: 10px 10px 7px rgba(0, 0, 0, .7);
+  -o-transform: scale(1.25);
+  position: relative;
+  z-index: 5;
+}
+
+ol {
+  text-align: center;
+}
+
+ol li {
+  display: inline;
+  padding-right: 1em;
+}
+
+ol li a {
+  color: #fff;
+}
